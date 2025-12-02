@@ -1,0 +1,15 @@
+easyocr==1.7.2
+fastapi==0.123.0
+numpy==2.3.5
+pandas==2.3.3
+peft==0.17.1
+Pillow==12.0.0
+pydantic==2.12.5
+Requests==2.32.5
+sentence_transformers==5.1.2
+sqlite_vec==0.1.6
+streamlit==1.51.0
+torch==2.6.0
+trafilatura==2.0.0
+transformers==4.49.0
+uvicorn==0.38.0
