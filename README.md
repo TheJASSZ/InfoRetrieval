@@ -75,7 +75,7 @@ Both models were used **as pre-trained** (no fine-tuning).
 The system processes different inputs using the following flow:
 
 ```
-URLs ───► Trafilatura Extraction ───► Summary Database
+URLs ───► Trafilatura Extraction ───►   T5-small / T5-base Summarization ───► Summary Database
                                       
 Text Notes ─────────────────────────►   T5-small / T5-base Summarization ───► Summary Database
                                                                                 
@@ -91,8 +91,10 @@ InfoRetrieval/
 │── streamlit_app.py       # Streamlit user interface
 │── summarization.py       # t5 model summarization
 │── requirements.txt       # Python dependencies
-│── image_captioning.py    # Caption generation script (test set + LightShot13k)
+│── image_captioning.py    # Fine-tuned Image Caption generation script
+│── URL_Test.py            # Script for testing URL text summarization (Can be skipped for use as this was created for testing the summarization)
 │── utils.py               # Helper scripts (Trafilatura extraction, embeddings)
+│── config/                # Setup for model/db path
 │── packages/              # sqlite-vector DB files
 │── models/                # Blip Fine tuned model
 │── README.md
