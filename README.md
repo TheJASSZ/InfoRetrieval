@@ -1,6 +1,6 @@
 # InfoRetrieval – AI-Powered Unified Content Summarization & Retrieval System
 
-## 🚀 Overview
+##  Overview
 
 **InfoRetrieval** is an AI-powered system designed to help users store, summarize, and semantically search across multiple forms of information—**URLs, text notes, and images/screenshots**.
 
@@ -15,7 +15,7 @@ This project was developed in **Python (PyCharm)** as part of an academic AI cou
 
 ---
 
-## 📌 Features
+##  Features
 
 ### 🔹 Multi-input Processing
 
@@ -23,9 +23,9 @@ This project was developed in **Python (PyCharm)** as part of an academic AI cou
 * **Text Notes** → Summarized using **T5-small** or **T5-base** (both pre-trained, not fine-tuned)
 * **Images/Screenshots** → Captioned using our **fine-tuned BLIP model**
 
-### 🔹 AI Models Used
+###  AI Models Used
 
-#### 📘 Text Summarization (HuggingFace)
+####  Text Summarization (HuggingFace)
 
 We used two variants depending on the use case:
 
@@ -44,7 +44,7 @@ Both models were used **as pre-trained** (no fine-tuning).
 
 ---
 
-#### 🖼️ Image Captioning (Fine-Tuned BLIP)
+####  Image Captioning (Fine-Tuned BLIP)
 
 * Base model: **BLIP**
 * Fine-tuned using:
@@ -62,7 +62,7 @@ Both models were used **as pre-trained** (no fine-tuning).
 
 ---
 
-### 🔹 Storage & Retrieval
+###  Storage & Retrieval
 
 * Vector embeddings stored using **sqlite-vector**
 * Search using **semantic similarity**
@@ -70,7 +70,7 @@ Both models were used **as pre-trained** (no fine-tuning).
 
 ---
 
-## 🧠 System Architecture
+##  System Architecture
 
 The system processes different inputs using the following flow:
 
@@ -83,7 +83,7 @@ Images ───► Fine-tuned BLIP Captioning ───────────
 ```
 
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 InfoRetrieval/
@@ -102,7 +102,7 @@ InfoRetrieval/
 
 ---
 
-## 🛠️ Installation & Setup
+##  Installation & Setup
 
 ### ✔ 1. Clone the repository
 
@@ -156,7 +156,7 @@ A browser window (Google Chrome recommended) will automatically open with the UI
 
 ---
 
-## 🖥️ How to Use
+##  How to Use
 
 The Streamlit app provides three input options:
 
@@ -178,30 +178,30 @@ Enter any phrase or concept and the system performs:
 
 ---
 
-## 🧪 Image Captioning – Dataset & Results
+##  Image Captioning – Dataset & Results
 
-### 📂 Dataset Summary
+###  Dataset Summary
 
 | Dataset      | Size               | Purpose                           |
 | ------------ | ------------------ | --------------------------------- |
 | Flickr8k     | 8000 images        | Fine-tuning BLIP (80-10-10 split) |
 | LightShot13k | 13,000 screenshots | Caption generation inference      |
 
-### 🏋️ Fine-Tuning Setup
+###  Fine-Tuning Setup
 
 * Model: BLIP
 * Techniques: PEFT + LoRA
 * Hardware: H200 GPU
 * Goal: Improve caption quality for real-world images/screenshots
 
-### 📊 Results
+###  Results
 
 * BLIP showed strong improvement after fine-tuning
 * Generated high-quality captions for LightShot13k
 
 ---
 
-## 🎯 Future Improvements
+##  Future Improvements
 
 * Fine-tune **T5-base** for summarization
 * OCR integration for text-heavy images
@@ -211,7 +211,7 @@ Enter any phrase or concept and the system performs:
 
 ---
 
-## 🤝 Contributions
+##  Contributions
 
 ### **Vishnu Purohitham**
 
@@ -235,7 +235,7 @@ Enter any phrase or concept and the system performs:
 
 ---
 
-## 📄 License
+##  License
 
 This project is for academic purposes.
 
