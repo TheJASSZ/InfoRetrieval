@@ -123,16 +123,18 @@ pip install -r requirements.txt
 
 Download the version appropriate for your OS from the official repo:
 
-🔗 [https://github.com/sqliteai/sqlite-vector](https://github.com/sqliteai/sqlite-vector)
-After clicking the link above scroll down to Installation section and click on official "Releases" hyperlink.
+🔗 [https://github.com/sqliteai/sqlite-vector](https://github.com/asg017/sqlite-vec)
+After clicking the link above scroll down to and click on release (https://github.com/asg017/sqlite-vec/releases)
 
-Follow their installation instructions for:
+Scroll down to the "Assets" section of the latest release. Download and extract the file:
 
-* Windows (vector-windows-x86_64-0.9.52.zip)
-* macOS (vector-macos-arm64-0.9.52.zip)
-* Linux (vector-linux-arm64-0.9.52.zip)
+Windows: sqlite-vec-X.Y.Z-loadable-windows-x86_64.zip (Look for vec0.dll inside)
 
-Make sure sqlite-vector is properly loaded by SQLite before running the app.
+macOS: sqlite-vec-X.Y.Z-loadable-macos-x86_64.tar.gz (Look for vec0.dylib)
+
+Linux: sqlite-vec-X.Y.Z-loadable-linux-x86_64.tar.gz (Look for vec0.so)
+
+Important: Place the extracted file (vec0.dll, vec0.dylib, or vec0.so) directly in the project root folder so the app can find it.
 
 ### ✔ 4. Run the backend API
 
@@ -147,7 +149,7 @@ Keep this terminal running.
 Open a new terminal and run:
 
 ```
-streamlit run -s streamlit_app.py
+streamlit run streamlit_app.py
 ```
 
 A browser window (Google Chrome recommended) will automatically open with the UI.
