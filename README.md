@@ -124,12 +124,13 @@ pip install -r requirements.txt
 Download the version appropriate for your OS from the official repo:
 
 🔗 [https://github.com/sqliteai/sqlite-vector](https://github.com/sqliteai/sqlite-vector)
+After clicking the link above scroll down to Installation section and click on official "Releases" hyperlink.
 
 Follow their installation instructions for:
 
-* Windows
-* macOS
-* Linux
+* Windows (vector-windows-x86_64-0.9.52.zip)
+* macOS (vector-macos-arm64-0.9.52.zip)
+* Linux (vector-linux-arm64-0.9.52.zip)
 
 Make sure sqlite-vector is properly loaded by SQLite before running the app.
 
